@@ -9,6 +9,7 @@ dynamodb = boto3.resource("dynamodb")
 #fetching value from env variable
 #db_name = os.environ['Table']
 
+#add dynamodb table name-eg:psv-student-table
 db_table=dynamodb.Table("psv-student-table")
 
 def lambda_handler(event, context):
